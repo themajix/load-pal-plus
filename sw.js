@@ -94,6 +94,9 @@ self.addEventListener("install", function(event) {
       .then(function() {
         console.log('WORKER: install completed');
       })
+     .catch(function(err) {
+      console.error(err);
+     })
   );
 });
 

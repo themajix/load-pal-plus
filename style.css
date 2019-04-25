@@ -5,7 +5,15 @@ html, body{
   width: 100%;
 }
 
-#camera, #camera--view, #camera--sensor, #camera--output, #camera--gallery{
+#camera, #camera--view, #camera--sensor{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#camera--output, #camera--gallery{
+    display: none;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -64,6 +72,7 @@ html, body{
 
 
 .taken{
+    display: block !important;
     height: 100px!important;
     width: 100px!important;
     transition: all 0.5s ease-in;
@@ -75,6 +84,7 @@ html, body{
 }
 
 .loaded{
+    display: block !important;
     height: 100px!important;
     width: 100px!important;
     transition: all 0.5s ease-in;

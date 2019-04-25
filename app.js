@@ -48,7 +48,8 @@ cameraSave.onclick = function() {
       xmlHttp.setRequestHeader('x-ms-blob-type', 'BlockBlob' );  
       xmlHttp.setRequestHeader('x-ms-meta-m1', 'v1' );  
       xmlHttp.setRequestHeader('x-ms-meta-m2', 'v2' );  
-      xmlHttp.setRequestHeader('Authorization', 'SharedKey storagelpp:PVyBSdVxj955/H7bVfAT26jSAtDHwsKrJC+eyte/C7R/+FEoiEmkD5Ueo9OBaRAxTMWpkan0GIPOmnOyP0fyXg==');  
+      xmlHttp.setRequestHeader('Authorization', 'SharedKey');
+      xmlHttp.setRequestHeader('storagelpp', 'PVyBSdVxj955/H7bVfAT26jSAtDHwsKrJC+eyte/C7R/+FEoiEmkD5Ueo9OBaRAxTMWpkan0GIPOmnOyP0fyXg==');  
       xmlHttp.send(savedImage); 
   }
 };

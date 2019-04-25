@@ -29,8 +29,39 @@ html, body{
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
     bottom: 30px;
-    left: calc(50% - 100px);
+    left: calc(30% - 100px);
 }
+
+#camera--save{
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 30px;
+    left: calc(60% - 100px);
+}
+
+#camera--open{
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 30px;
+    left: calc(90% - 100px);
+}
+
 
 .taken{
     height: 100px!important;

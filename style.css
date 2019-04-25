@@ -37,7 +37,7 @@ html, body{
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
     bottom: 30px;
-    left: 20px;
+    left: 10px;
 }
 
 #camera--save{
@@ -52,7 +52,7 @@ html, body{
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
     bottom: 30px;
-    left: 175px;
+    left: 165px;
 }
 
 #camera--open{
@@ -67,7 +67,7 @@ html, body{
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
     bottom: 30px;
-    left: 430px;
+    left: 330px;
 }
 
 

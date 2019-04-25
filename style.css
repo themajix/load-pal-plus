@@ -21,8 +21,8 @@ html, body{
   }
   
   #camera--view, #camera--sensor, #camera--output, #camera--gallery{
-      transform: scaleX(-1);
-      filter: FlipH;
+      transform: scaleX(1);
+      // filter: FlipH;
   }
   
   #camera--trigger{

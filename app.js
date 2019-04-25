@@ -34,7 +34,6 @@ cameraTrigger.onclick = function() {
 };
 
 // Save a picture when cameraSave is tapped
-DefaultEndpointsProtocol=https;AccountName=storagelpp;AccountKey=PVyBSdVxj955/H7bVfAT26jSAtDHwsKrJC+eyte/C7R/+FEoiEmkD5Ueo9OBaRAxTMWpkan0GIPOmnOyP0fyXg==;EndpointSuffix=core.windows.net
 
 cameraSave.onclick = function() {
   var xmlHttp = getNewHTTPObject();

@@ -9,6 +9,7 @@ const cameraView = document.querySelector("#camera--view"),
     cameraTrigger = document.querySelector("#camera--trigger"),
     cameraSave = document.querySelector("#camera--save"),
     cameraOpen = document.querySelector("#camera--open");
+    cameraGallery = document.querySelector("#camera--gallery")
 
 // Access the device camera and stream to cameraView
 function cameraStart() {
@@ -53,6 +54,28 @@ cameraSave.onclick = function() {
       xmlHttp.send(cameraSensor.toDataURL("image/webp")); 
   }
 };
+
+cameraOpen.onclick = function() { 
+  var xmlHttp = getNewHTTPObject();
+  chargeURLGet('https://storagelpp.blob.core.windows.net/imageslpp/someblob.webp?sv=2018-03-28&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-04-25T22:09:47Z&st=2019-04-25T14:09:47Z&spr=https&sig=50irU0UcN20fi1F1GSV4QvHGwCUP6CRtxUnXHH0OfWI%3D', setImageToGallery);
+
+  function chargeURLGet(url, callback) {
+    xmlHttp.onreadystatechange = function() {
+      if (xmlHttp.readyState == 4 && xmlHttp.status == 200) 
+        callback(xmlHttp.responseText); 
+    }
+    xmlHttp.open('GET', url);
+    xmlHttp.send(null);
+  }
+
+  function setImageToGallery(response) {
+    cameraGallery.src = response;
+
+    cameraGallery.classList.add("loaded");
+
+  }
+
+}
 
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);

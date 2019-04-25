@@ -1,96 +1,102 @@
 html, body{
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
-#camera, #camera--view, #camera--sensor{
-    position: fixed;
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
-    object-fit: cover;
-}
-
-#camera--output, #camera--gallery{
-    display: none;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-#camera--view, #camera--sensor, #camera--output, #camera--gallery{
-    transform: scaleX(-1);
-    filter: FlipH;
-}
-
-#camera--trigger{
-    width: 150px;
-    background-color: black;
-    color: white;
-    font-size: 16px;
-    border-radius: 30px;
-    border: none;
-    padding: 15px 20px;
-    text-align: center;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    position: fixed;
-    bottom: 30px;
-    left: 10px;
-}
-
-#camera--save{
-    width: 150px;
-    background-color: black;
-    color: white;
-    font-size: 16px;
-    border-radius: 30px;
-    border: none;
-    padding: 15px 20px;
-    text-align: center;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    position: fixed;
-    bottom: 30px;
-    left: 165px;
-}
-
-#camera--open{
-    width: 150px;
-    background-color: black;
-    color: white;
-    font-size: 16px;
-    border-radius: 30px;
-    border: none;
-    padding: 15px 20px;
-    text-align: center;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    position: fixed;
-    bottom: 30px;
-    left: 320px;
-}
-
-
-.taken{
-    display: block !important;
-    height: 100px!important;
-    width: 100px!important;
-    transition: all 0.5s ease-in;
-    border: solid 3px white;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    top: 20px;
-    right: 20px;
-    z-index: 2;
-}
-
-.loaded{
-    display: block !important;
-    height: 100px!important;
-    width: 100px!important;
-    transition: all 0.5s ease-in;
-    border: solid 3px white;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    top: 20px;
-    left: 20px;
-    z-index: 2;
-}
+  }
+  
+  #camera, #camera--view, #camera--sensor{
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+  }
+  
+  #camera--output, #camera--gallery{
+      display: none;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+  }
+  
+  #camera--view, #camera--sensor, #camera--output, #camera--gallery{
+      transform: scaleX(-1);
+      filter: FlipH;
+  }
+  
+  #camera--trigger{
+      width: 70px;
+      height: 70px;
+      background-color: #c51818;
+      border-color: #f3f0f0;
+      border-width: 2px;
+      border-style: solid;
+      color: white;
+      font-size: 16px;
+      border-radius: 70px;
+      border: none;
+      padding: 15px 20px;
+      text-align: center;
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+      position: fixed;
+      bottom: 30px;
+      left: calc(50% - 35px);
+  }
+  
+  #camera--save{
+      width: 100px;
+      height: 45px;
+      background-color: #103f86;
+      color: white;
+      font-size: 16px;
+      border-radius: 30px;
+      border: none;
+      padding: 15px 20px;
+      text-align: center;
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+      position: fixed;
+      bottom: 37px;
+      left: calc(50% + 40px);
+  }
+  
+  #camera--open{
+      width: 100px;
+      height: 45px;
+      background-color: #428447;
+      color: white;
+      font-size: 16px;
+      border-radius: 30px;
+      border: none;
+      padding: 15px 20px;
+      text-align: center;
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+      position: fixed;
+      bottom: 37px;
+      left: calc(50% - 140px);
+  }
+  
+  
+  .taken{
+      display: block !important;
+      height: 100px!important;
+      width: 100px!important;
+      transition: all 0.5s ease-in;
+      border: solid 3px white;
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+      top: 20px;
+      right: 20px;
+      z-index: 2;
+  }
+  
+  .loaded{
+      display: block !important;
+      height: 100px!important;
+      width: 100px!important;
+      transition: all 0.5s ease-in;
+      border: solid 3px white;
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+  }

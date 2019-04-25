@@ -37,7 +37,7 @@ cameraTrigger.onclick = function() {
 
 cameraSave.onclick = function() {
   var xmlHttp = getNewHTTPObject();
-  chargeURLPut('https://storagelpp.blob.core.windows.net/imageslpp/myblob');
+  chargeURLPut('https://storagelpp.blob.core.windows.net/imageslpp/someblob?sv=2018-03-28&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-04-25T22:09:47Z&st=2019-04-25T14:09:47Z&spr=https&sig=50irU0UcN20fi1F1GSV4QvHGwCUP6CRtxUnXHH0OfWI%3D');
 
   function chargeURLPut(url) { 
       var savedImage = cameraSensor.getContext("2d").getImageData(0, 0, cameraSensor.width, cameraSensor.height);
@@ -48,8 +48,8 @@ cameraSave.onclick = function() {
       xmlHttp.setRequestHeader('x-ms-blob-type', 'BlockBlob' );  
       xmlHttp.setRequestHeader('x-ms-meta-m1', 'v1' );  
       xmlHttp.setRequestHeader('x-ms-meta-m2', 'v2' );  
-      xmlHttp.setRequestHeader('Authorization', 'SharedKey');
-      xmlHttp.setRequestHeader('storagelpp', 'PVyBSdVxj955/H7bVfAT26jSAtDHwsKrJC+eyte/C7R/+FEoiEmkD5Ueo9OBaRAxTMWpkan0GIPOmnOyP0fyXg==');  
+      // xmlHttp.setRequestHeader('Authorization', 'SharedKey');
+      // xmlHttp.setRequestHeader('storagelpp', 'PVyBSdVxj955/H7bVfAT26jSAtDHwsKrJC+eyte/C7R/+FEoiEmkD5Ueo9OBaRAxTMWpkan0GIPOmnOyP0fyXg==');  
       xmlHttp.send(savedImage); 
   }
 };
